@@ -1,0 +1,6 @@
+framework module Pods_fourSquareClone {
+  umbrella header "Pods-fourSquareClone-umbrella.h"
+
+  export *
+  module * { export * }
+}
