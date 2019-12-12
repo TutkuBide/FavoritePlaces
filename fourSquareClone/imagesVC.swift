@@ -39,7 +39,7 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
   
     
     
-    ////boş olarak başlatıyoruz
+    
     override func viewWillAppear(_ animated: Bool) {
         globalName = ""
         globalType = ""

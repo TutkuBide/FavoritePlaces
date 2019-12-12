@@ -18,7 +18,6 @@
 		8589D15622C64E3B00D4DEE8 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15522C64E3B00D4DEE8 /* mapVC.swift */; };
 		8589D15822C64EFF00D4DEE8 /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15722C64EFF00D4DEE8 /* detailsVC.swift */; };
 		859EFEB622ED9D5E007E385E /* addbackgorund.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 859EFEB522ED9D5E007E385E /* addbackgorund.jpg */; };
-		859EFEBC22EDA5BC007E385E /* locationicon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 859EFEBB22EDA5BB007E385E /* locationicon.jpg */; };
 		859EFEBE22EDA681007E385E /* loco.png in Resources */ = {isa = PBXBuildFile; fileRef = 859EFEBD22EDA681007E385E /* loco.png */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		8589D15522C64E3B00D4DEE8 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
 		8589D15722C64EFF00D4DEE8 /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
 		859EFEB522ED9D5E007E385E /* addbackgorund.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addbackgorund.jpg; sourceTree = "<group>"; };
-		859EFEBB22EDA5BB007E385E /* locationicon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = locationicon.jpg; sourceTree = "<group>"; };
 		859EFEBD22EDA681007E385E /* loco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loco.png; sourceTree = "<group>"; };
 		ED822FD37CC7D41FE8CBA6BE /* Pods-fourSquareClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourSquareClone.release.xcconfig"; path = "Target Support Files/Pods-fourSquareClone/Pods-fourSquareClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +92,6 @@
 				8589D14422C649AF00D4DEE8 /* Assets.xcassets */,
 				859EFEB522ED9D5E007E385E /* addbackgorund.jpg */,
 				8589D14622C649AF00D4DEE8 /* LaunchScreen.storyboard */,
-				859EFEBB22EDA5BB007E385E /* locationicon.jpg */,
 				8589D14922C649AF00D4DEE8 /* Info.plist */,
 				859EFEBD22EDA681007E385E /* loco.png */,
 			);
@@ -169,7 +166,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859EFEBC22EDA5BC007E385E /* locationicon.jpg in Resources */,
 				8589D14822C649AF00D4DEE8 /* LaunchScreen.storyboard in Resources */,
 				859EFEBE22EDA681007E385E /* loco.png in Resources */,
 				859EFEB622ED9D5E007E385E /* addbackgorund.jpg in Resources */,

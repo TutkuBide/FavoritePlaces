@@ -62,7 +62,7 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
         
         
     }
-     ////// Annotation customize etme////
+     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
