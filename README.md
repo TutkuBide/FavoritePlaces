@@ -6,3 +6,4 @@
 # fourSquareClone
 # fourSquareClone
 # fourSquareClone
+# FavoritePlaces
