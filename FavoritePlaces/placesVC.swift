@@ -10,21 +10,17 @@ import UIKit
 import Parse
 
 class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     var placesNameArray = [String]()
     var chosenPlace = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
-        
         getData()
-        
-        
-        
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -41,16 +37,9 @@ class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-           
-            
             self.placesNameArray.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
             self.tableView.reloadData()
-            
-            
-            
-            
-            
         }
     }
     
@@ -63,7 +52,7 @@ class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             }else{
-               
+                
                 self.placesNameArray.removeAll(keepingCapacity: false)
                 for object in objects! {
                     self.placesNameArray.append(object.object(forKey: "name") as! String)
@@ -72,7 +61,6 @@ class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 self.tableView.reloadData()
             }
         }
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,15 +71,12 @@ class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let cell = UITableViewCell()
         cell.textLabel?.text = "☆ \(placesNameArray[indexPath.row])"
         return cell
-        
-        
     }
-   
-
+    
     @IBAction func addButton(_ sender: Any) {
-       self.performSegue(withIdentifier: "fromplacesVCtoimagesVC", sender: nil)
-        
+        self.performSegue(withIdentifier: "fromplacesVCtoimagesVC", sender: nil)
     }
+    
     @IBAction func logoutButton(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "username")
         UserDefaults.standard.synchronize()
@@ -99,10 +84,5 @@ class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         delegate.window?.rootViewController = sign
         delegate.rememberuser()
-        
-        
-        
-        
     }
-    
 }

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_fourSquareCloneVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_fourSquareCloneVersionString[];
+FOUNDATION_EXPORT double Pods_FavoritePlacesVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_FavoritePlacesVersionString[];
 

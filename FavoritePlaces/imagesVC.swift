@@ -27,7 +27,6 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         imageView.isUserInteractionEnabled = true
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(imagesVC.selectedImage))
         imageView.addGestureRecognizer(recognizer)
-        
     }
     
     func radius() {
@@ -35,11 +34,7 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         placeTypeText.layer.cornerRadius = 75
         placeAtmospherText.layer.cornerRadius = 75
     }
-    
-  
-    
-    
-    
+
     override func viewWillAppear(_ animated: Bool) {
         globalName = ""
         globalType = ""
@@ -61,7 +56,6 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         nextButtons.isEnabled = true
     }
     
-
     @IBAction func nextClick(_ sender: Any) {
        nextButtons.isEnabled = false
         if placenameText.text != nil && placeTypeText.text != nil && placeAtmospherText.text != nil {
@@ -70,9 +64,6 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
                 globalType = placeTypeText.text!
                 globalAtmospher = placeAtmospherText.text!
                 globalImage = chosenImage
-                
-                
-                
             }
         }
         self.performSegue(withIdentifier: "fromimageVCtomapVC", sender: nil)
@@ -82,9 +73,7 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         imageView.image = UIImage(named: "Unknown.png")
     }
     
-    
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
 }

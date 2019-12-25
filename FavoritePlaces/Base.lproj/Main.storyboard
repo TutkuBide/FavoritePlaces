@@ -11,7 +11,7 @@
         <!--PlacesVC-->
         <scene sceneID="wCB-NB-9G7">
             <objects>
-                <viewController id="SHw-kI-ng1" customClass="placesVC" customModule="fourSquareClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SHw-kI-ng1" customClass="placesVC" customModule="FavoritePlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p9o-Ls-x3N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
         <!--DetailsVC-->
         <scene sceneID="7Hg-oU-Sqf">
             <objects>
-                <viewController id="rX5-K4-OWv" customClass="detailsVC" customModule="fourSquareClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rX5-K4-OWv" customClass="detailsVC" customModule="FavoritePlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H83-5H-NgY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
         <!--ImagesVC-->
         <scene sceneID="owc-xY-NwQ">
             <objects>
-                <viewController id="2cD-kH-Bci" customClass="imagesVC" customModule="fourSquareClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2cD-kH-Bci" customClass="imagesVC" customModule="FavoritePlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9DF-8v-NcD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,7 +261,7 @@
         <!--MapVC-->
         <scene sceneID="TRS-Tw-wUJ">
             <objects>
-                <viewController id="FRl-9Z-cfu" customClass="mapVC" customModule="fourSquareClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FRl-9Z-cfu" customClass="mapVC" customModule="FavoritePlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hHh-yZ-zjF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,7 +311,7 @@
         <!--Sign InVC-->
         <scene sceneID="kPY-dO-qAs">
             <objects>
-                <viewController storyboardIdentifier="sign" id="4id-wH-o1E" customClass="signInVC" customModule="fourSquareClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sign" id="4id-wH-o1E" customClass="signInVC" customModule="FavoritePlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aq4-ja-dVQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -367,6 +367,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signup:" destination="4id-wH-o1E" eventType="touchUpInside" id="BYM-aR-3Zb"/>
                                 </connections>

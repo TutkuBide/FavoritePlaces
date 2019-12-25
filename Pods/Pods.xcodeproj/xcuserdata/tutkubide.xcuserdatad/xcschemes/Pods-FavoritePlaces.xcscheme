@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "46CDC9D514B138AFEF1AAF8F63BF8696"
-               BuildableName = "Pods_fourSquareClone.framework"
-               BlueprintName = "Pods-fourSquareClone"
+               BlueprintIdentifier = "7096BCEA574D64BBC20149A15707B30B"
+               BuildableName = "Pods_FavoritePlaces.framework"
+               BlueprintName = "Pods-FavoritePlaces"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -42,17 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "46CDC9D514B138AFEF1AAF8F63BF8696"
-            BuildableName = "Pods_fourSquareClone.framework"
-            BlueprintName = "Pods-fourSquareClone"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
