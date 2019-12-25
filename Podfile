@@ -1,12 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'fourSquareClone' do
+target 'FavoritePlaces' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
 pod 'Parse'
 
-  # Pods for fourSquareClone
+  # Pods for FavoritePlaces
 
 end
