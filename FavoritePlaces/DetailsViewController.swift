@@ -10,7 +10,8 @@ import UIKit
 import Parse
 import MapKit
 
-class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
+class DetailsViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var placeNameLabel: UILabel!
@@ -30,26 +31,20 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
     var manager = CLLocationManager()
     var requestCLLocation = CLLocation()
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         mapView.delegate = self
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
         manager.desiredAccuracy = kCLLocationAccuracyBest
-       
         findPlaceFromServer()
-        
         imageView.layer.cornerRadius = 75
         detailsView.layer.cornerRadius = 20
         
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         if self.chosenLatitude != "" && self.chosenLongitude != "" {
-                let location = CLLocationCoordinate2D(latitude: Double(self.chosenLatitude)!, longitude: Double(self.chosenLongitude)!)
+            let location = CLLocationCoordinate2D(latitude: Double(self.chosenLatitude)!, longitude: Double(self.chosenLongitude)!)
             let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location, span: span)
             self.mapView.setRegion(region, animated: true)
@@ -59,14 +54,11 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
             annotation.subtitle = self.typeArray.last!
             self.mapView.addAnnotation(annotation)
         }
-        
-        
     }
-     
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
-            
         }
         let refuseID = "pin"
         var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: refuseID)
@@ -80,12 +72,11 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
             pinView?.annotation = annotation
         }
         return pinView
-        
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if self.chosenLongitude != "" && self.chosenLatitude != "" {
-        self.requestCLLocation = CLLocation(latitude: Double(self.chosenLatitude)!, longitude: Double(chosenLongitude)!)
+            self.requestCLLocation = CLLocation(latitude: Double(self.chosenLatitude)!, longitude: Double(chosenLongitude)!)
             CLGeocoder().reverseGeocodeLocation(requestCLLocation) { (placemarks, error) in
                 if let placemark = placemarks {
                     if placemark.count > 0 {
@@ -95,9 +86,6 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
                         let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
                         mapItem.openInMaps(launchOptions: launchOptions)
                     }
-            
-            
-                    
                 }
             }
         }
@@ -119,7 +107,6 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
                 self.latitudeArray.removeAll(keepingCapacity: false)
                 self.atmospherArray.removeAll(keepingCapacity: false)
                 self.longitudeArray.removeAll(keepingCapacity: false)
-            
                 for object in objects! {
                     self.nameArray.append(object.object(forKey: "name") as! String)
                     self.typeArray.append(object.object(forKey: "type") as! String)
@@ -127,7 +114,6 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
                     self.latitudeArray.append(object.object(forKey: "latitude") as! String)
                     self.longitudeArray.append(object.object(forKey: "longitude") as! String)
                     self.imageArray.append(object.object(forKey: "image") as! PFFileObject)
-                    
                     self.placeNameLabel.text = "Name: \(self.nameArray.last!)"
                     self.placeTypeLabel.text = "Type: \(self.typeArray.last!)"
                     self.chosenLongitude = self.longitudeArray.last!
@@ -142,19 +128,10 @@ class detailsVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
                             self.present(alert, animated: true, completion: nil)
                         }else{
                             self.imageView.image = UIImage(data: data!)
-                            
                         }
                     })
-                    
-                    
                 }
-                
             }
-            
         }
-        
     }
-    
-
-
 }

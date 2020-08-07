@@ -12,7 +12,8 @@ var globalType = ""
 var globalAtmospher = ""
 var globalImage = UIImage()
 
-class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class SelectImageViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    
     @IBOutlet weak var nextButtons: UIBarButtonItem!
     @IBOutlet weak var placenameText: UITextField!
     @IBOutlet weak var placeTypeText: UITextField!
@@ -21,26 +22,20 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        radius()
-        nextButtons.isEnabled = false
-        imageView.isUserInteractionEnabled = true
-        let recognizer = UITapGestureRecognizer(target: self, action: #selector(imagesVC.selectedImage))
-        imageView.addGestureRecognizer(recognizer)
-    }
-    
-    func radius() {
         placenameText.layer.cornerRadius = 75
         placeTypeText.layer.cornerRadius = 75
         placeAtmospherText.layer.cornerRadius = 75
+        nextButtons.isEnabled = false
+        imageView.isUserInteractionEnabled = true
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(SelectImageViewController.selectedImage))
+        imageView.addGestureRecognizer(recognizer)
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         globalName = ""
         globalType = ""
         globalAtmospher = ""
         globalImage = UIImage()
-        
     }
     
     @objc func selectedImage() {
@@ -50,14 +45,15 @@ class imagesVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         picker.allowsEditing = true
         self.present(picker, animated: true, completion: nil)
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imageView.image = info[.originalImage] as? UIImage
         self.dismiss(animated: true, completion: nil)
         nextButtons.isEnabled = true
     }
     
-    @IBAction func nextClick(_ sender: Any) {
-       nextButtons.isEnabled = false
+    @IBAction func nextTapped(_ sender: Any) {
+        nextButtons.isEnabled = false
         if placenameText.text != nil && placeTypeText.text != nil && placeAtmospherText.text != nil {
             if let chosenImage = imageView.image {
                 globalName = placenameText.text!

@@ -8,35 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		3FD0BE99C925F41764E26EC9 /* Pods_FavoritePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7EA6360F72EF94F8699EB0 /* Pods_FavoritePlaces.framework */; };
-		857EA94D22C8111000786BBE /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857EA94C22C8111000786BBE /* signInVC.swift */; };
+		857EA94D22C8111000786BBE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857EA94C22C8111000786BBE /* SignInViewController.swift */; };
 		8589D13E22C649AD00D4DEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D13D22C649AD00D4DEE8 /* AppDelegate.swift */; };
 		8589D14322C649AD00D4DEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8589D14122C649AD00D4DEE8 /* Main.storyboard */; };
 		8589D14522C649AF00D4DEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8589D14422C649AF00D4DEE8 /* Assets.xcassets */; };
 		8589D14822C649AF00D4DEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8589D14622C649AF00D4DEE8 /* LaunchScreen.storyboard */; };
-		8589D15022C64B9400D4DEE8 /* placesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D14F22C64B9400D4DEE8 /* placesVC.swift */; };
-		8589D15422C64D8400D4DEE8 /* imagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15322C64D8400D4DEE8 /* imagesVC.swift */; };
-		8589D15622C64E3B00D4DEE8 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15522C64E3B00D4DEE8 /* mapVC.swift */; };
-		8589D15822C64EFF00D4DEE8 /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15722C64EFF00D4DEE8 /* detailsVC.swift */; };
-		859EFEB622ED9D5E007E385E /* addbackgorund.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 859EFEB522ED9D5E007E385E /* addbackgorund.jpg */; };
-		859EFEBE22EDA681007E385E /* loco.png in Resources */ = {isa = PBXBuildFile; fileRef = 859EFEBD22EDA681007E385E /* loco.png */; };
+		8589D15022C64B9400D4DEE8 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D14F22C64B9400D4DEE8 /* PlacesViewController.swift */; };
+		8589D15422C64D8400D4DEE8 /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15322C64D8400D4DEE8 /* SelectImageViewController.swift */; };
+		8589D15622C64E3B00D4DEE8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15522C64E3B00D4DEE8 /* MapViewController.swift */; };
+		8589D15822C64EFF00D4DEE8 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589D15722C64EFF00D4DEE8 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04613C94C7AA5DE63397FA44 /* Pods-FavoritePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoritePlaces.debug.xcconfig"; path = "Target Support Files/Pods-FavoritePlaces/Pods-FavoritePlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		6A7EA6360F72EF94F8699EB0 /* Pods_FavoritePlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavoritePlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		857EA94C22C8111000786BBE /* signInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
+		857EA94C22C8111000786BBE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8589D13A22C649AD00D4DEE8 /* FavoritePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoritePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8589D13D22C649AD00D4DEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8589D14222C649AD00D4DEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8589D14422C649AF00D4DEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8589D14722C649AF00D4DEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8589D14922C649AF00D4DEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8589D14F22C64B9400D4DEE8 /* placesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesVC.swift; sourceTree = "<group>"; };
-		8589D15322C64D8400D4DEE8 /* imagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesVC.swift; sourceTree = "<group>"; };
-		8589D15522C64E3B00D4DEE8 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
-		8589D15722C64EFF00D4DEE8 /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
-		859EFEB522ED9D5E007E385E /* addbackgorund.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addbackgorund.jpg; sourceTree = "<group>"; };
-		859EFEBD22EDA681007E385E /* loco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loco.png; sourceTree = "<group>"; };
+		8589D14F22C64B9400D4DEE8 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		8589D15322C64D8400D4DEE8 /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
+		8589D15522C64E3B00D4DEE8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8589D15722C64EFF00D4DEE8 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		ED822FD37CC7D41FE8CBA6BE /* Pods-FavoritePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoritePlaces.release.xcconfig"; path = "Target Support Files/Pods-FavoritePlaces/Pods-FavoritePlaces.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,17 +79,15 @@
 			isa = PBXGroup;
 			children = (
 				8589D13D22C649AD00D4DEE8 /* AppDelegate.swift */,
-				857EA94C22C8111000786BBE /* signInVC.swift */,
-				8589D14F22C64B9400D4DEE8 /* placesVC.swift */,
-				8589D15322C64D8400D4DEE8 /* imagesVC.swift */,
-				8589D15522C64E3B00D4DEE8 /* mapVC.swift */,
-				8589D15722C64EFF00D4DEE8 /* detailsVC.swift */,
+				857EA94C22C8111000786BBE /* SignInViewController.swift */,
+				8589D14F22C64B9400D4DEE8 /* PlacesViewController.swift */,
+				8589D15322C64D8400D4DEE8 /* SelectImageViewController.swift */,
+				8589D15522C64E3B00D4DEE8 /* MapViewController.swift */,
+				8589D15722C64EFF00D4DEE8 /* DetailsViewController.swift */,
 				8589D14122C649AD00D4DEE8 /* Main.storyboard */,
 				8589D14422C649AF00D4DEE8 /* Assets.xcassets */,
-				859EFEB522ED9D5E007E385E /* addbackgorund.jpg */,
 				8589D14622C649AF00D4DEE8 /* LaunchScreen.storyboard */,
 				8589D14922C649AF00D4DEE8 /* Info.plist */,
-				859EFEBD22EDA681007E385E /* loco.png */,
 			);
 			path = FavoritePlaces;
 			sourceTree = "<group>";
@@ -167,8 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8589D14822C649AF00D4DEE8 /* LaunchScreen.storyboard in Resources */,
-				859EFEBE22EDA681007E385E /* loco.png in Resources */,
-				859EFEB622ED9D5E007E385E /* addbackgorund.jpg in Resources */,
 				8589D14522C649AF00D4DEE8 /* Assets.xcassets in Resources */,
 				8589D14322C649AD00D4DEE8 /* Main.storyboard in Resources */,
 			);
@@ -223,12 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8589D15622C64E3B00D4DEE8 /* mapVC.swift in Sources */,
-				8589D15822C64EFF00D4DEE8 /* detailsVC.swift in Sources */,
-				8589D15422C64D8400D4DEE8 /* imagesVC.swift in Sources */,
+				8589D15622C64E3B00D4DEE8 /* MapViewController.swift in Sources */,
+				8589D15822C64EFF00D4DEE8 /* DetailsViewController.swift in Sources */,
+				8589D15422C64D8400D4DEE8 /* SelectImageViewController.swift in Sources */,
 				8589D13E22C649AD00D4DEE8 /* AppDelegate.swift in Sources */,
-				857EA94D22C8111000786BBE /* signInVC.swift in Sources */,
-				8589D15022C64B9400D4DEE8 /* placesVC.swift in Sources */,
+				857EA94D22C8111000786BBE /* SignInViewController.swift in Sources */,
+				8589D15022C64B9400D4DEE8 /* PlacesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

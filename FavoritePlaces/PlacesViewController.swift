@@ -9,15 +9,15 @@
 import UIKit
 import Parse
 
-class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class PlacesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    
     var placesNameArray = [String]()
     var chosenPlace = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.delegate = self
         tableView.dataSource = self
         getData()
@@ -30,7 +30,7 @@ class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromplacesVCtodetailsVC" {
-            let destination = segue.destination as! detailsVC
+            let destination = segue.destination as! DetailsViewController
             destination.selectedPlaces = self.chosenPlace
         }
     }
@@ -73,16 +73,16 @@ class placesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     
-    @IBAction func addButton(_ sender: Any) {
+    @IBAction func addButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "fromplacesVCtoimagesVC", sender: nil)
     }
     
     @IBAction func logoutButton(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "username")
         UserDefaults.standard.synchronize()
-        let sign = self.storyboard?.instantiateViewController(withIdentifier: "sign") as! signInVC
+        let sign = self.storyboard?.instantiateViewController(withIdentifier: "sign") as! SignInViewController
         let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         delegate.window?.rootViewController = sign
-        delegate.rememberuser()
+        delegate.rememberUser()
     }
 }
